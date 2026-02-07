@@ -1,11 +1,1 @@
-# Configuration settings for the Oracle migration tool
-
-DATABASE_HOST = 'localhost'
-DATABASE_PORT = 1521
-DATABASE_SID = 'ORCL'
-DATABASE_USER = 'admin'
-DATABASE_PASSWORD = 'password'
-
-# Migration settings
-MIGRATION_BATCH_SIZE = 1000
-LOGGING_LEVEL = 'INFO'
+SOURCE_DATABASE_HOST = 'localhost'\nSOURCE_DATABASE_PORT = '1521'\nSOURCE_DATABASE_SID = 'source_sid'\nSOURCE_DATABASE_USER = 'source_user'\nSOURCE_DATABASE_PASSWORD = 'source_password'\nTARGET_DATABASE_HOST = 'localhost'\nTARGET_DATABASE_PORT = '1521'\nTARGET_DATABASE_SID = 'target_sid'\nTARGET_DATABASE_USER = 'target_user'\nTARGET_DATABASE_PASSWORD = 'target_password'\nMIGRATION_BATCH_SIZE = 1000\nLOGGING_LEVEL = 'INFO'\nLOG_DIR = '/var/log/migration/'
