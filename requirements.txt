@@ -1,2 +1,4 @@
 oracledb
 sqlalchemy
+flask
+flask-cors
