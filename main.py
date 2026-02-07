@@ -15,7 +15,7 @@ def main():
         migrator = DatabaseMigrator(source_config, target_config, batch_size=MIGRATION_BATCH_SIZE)
         logger.info(f"DatabaseMigrator initialized with batch size: {MIGRATION_BATCH_SIZE}")
 
-        tables_to_migrate = []
+        tables_to_migrate = [('TB_NF', 'TB_NF'), ('TB_NF_ITEM', 'TB_NF_ITEM')]
         if not tables_to_migrate:
             logger.warning("No tables configured for migration. Update the tables_to_migrate list")
             return
